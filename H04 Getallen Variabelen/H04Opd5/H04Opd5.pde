@@ -1,13 +1,17 @@
 float seconde = 3153600;
-float uren = 876;
-float dagen = 36.5;
-float jaren = 0.1; 
+float minuten = 0;
+float uren = 0;
+float dagen = 0;
+float jaren = 0; 
 
-seconde /= 3600;
-println(seconde);
-
-uren /= 24;
+minuten = seconde / 60;
+println(minuten);
+ 
+uren = minuten/ 60;
 println(uren);
 
-dagen /= 365;
+dagen = uren/24;
 println(dagen);
+
+jaren = dagen/365;
+println(jaren);

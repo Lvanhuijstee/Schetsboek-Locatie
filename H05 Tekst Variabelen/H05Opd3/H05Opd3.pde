@@ -10,6 +10,4 @@ BMI *= 100;
 BMI = (int) BMI;
 BMI /= 100;
 
-
-
 println(a +" "+ G +" "+ b +" "+ L +" "+ c +" "+ BMI);
