@@ -20,11 +20,12 @@ void draw(){
   text("Score:" +  point ,215,40);
   noFill();
   fill(255,255,255);
+  
   if(x == r && y == a){
     point ++;
     r = floor(random(49));
     a = floor(random(49));   
-}
+  }
     
   updatetail();
   
@@ -37,6 +38,7 @@ void draw(){
   }else if(keyCode == 40){
     y++;
   }
+  
   if(x == 50 || y == 50 || x== -1||y== -1){
     dead = true;
   }
@@ -88,7 +90,7 @@ void updatetail(){
 }
 
 void gameover(){
-  if( dead == true){
+  if( dead){
     snakeTailX.clear();
     snakeTailY.clear();
     fill(255,255,255);
